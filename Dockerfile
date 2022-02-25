@@ -1,6 +1,6 @@
-FROM centos
+FROM ubuntu
 MAINTAINER himogyal81@gmail.com
-RUN yum install httpd -y
+RUN apt-get install httpd -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page274/resto.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip resto.zip
