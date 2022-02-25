@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM ubuntu:latest
 MAINTAINER himogyal81@gmail.com
-RUN apt install -y apache2 \
+RUN apt-get install apache2 \
 zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
