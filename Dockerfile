@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM centos:latest
 MAINTAINER himogyal81@gmail.com
-RUN apt-get update -y
-RUN apt-get install apache2 -y \
+RUN yum update -y
+RUN yum install httpd -y \
 zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page247/kindle.zip /var/www/html/
