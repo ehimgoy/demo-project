@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM centos:7
 MAINTAINER himogyal81@gmail.com
 RUN apt update -y
 RUN apt install apache2 -y \
